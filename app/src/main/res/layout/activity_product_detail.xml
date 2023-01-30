@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ProductDetailActivity">
+
+
+    <EditText
+        android:id="@+id/obs_produto_detalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valor_produto_detalhe"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:hint="@string/alguma_observaco"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/backProdutos"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:src="@drawable/arrow_back" />
+
+    <ImageView
+        android:id="@+id/img_produto_detalhe"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/backProdutos"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher_uaifood_foreground" />
+
+    <LinearLayout
+        android:id="@+id/linear_barra_compras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_adicionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:text="@string/btn_adicionar"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc_produto_detalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nome_produto_detalhe"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/valor_produto_detalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc_produto_detalhe"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/green"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/detalhe_do_produto"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/nome_produto_detalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_produto_detalhe"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="20sp" />
+
+</RelativeLayout>
