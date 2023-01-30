@@ -1,4 +1,4 @@
-"# UaiFood" 
+"UaiFood" 
 
 Trabalho final para matéria de Ambientes Móveis,
 realizado junto aos colegas de equipe Marcos Gabriel e Renato Cabral.
